@@ -35,7 +35,6 @@
     <section>
         <div class="login">
         <form action="verification.php" method="POST">
-            <label><b>Login</b></label>
             <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
 
             <label><b>Mot de passe</b></label>
