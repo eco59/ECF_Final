@@ -1,0 +1,653 @@
+/*paramètre généraux */
+a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+html, body
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url("image_de_fond-min.jpg");
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height:100%
+}
+
+section, div, footer, nav
+{
+    display: flex;
+}
+
+/*1ere section */
+.haut_de_page
+{
+    justify-content: space-between;
+    height: 13%;
+    align-items: center;
+}
+
+.haut_de_page img
+{
+    padding: 10px;
+}
+.logo img
+{
+    width: 84px;
+    height: 81px;
+}
+
+
+.menu img
+{
+    width: 38px;
+    height: 36px;
+}
+
+.menu a
+{
+    font-family: "Inter";
+    color: #F9F1F1;
+}
+
+nav 
+{
+    width: 50%;
+    height: 100px;
+}
+
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 220px;
+}
+
+nav .main_pages a 
+{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: #1d1919;
+}
+
+label, #toggle
+{
+display: none;
+}
+label 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+#toggle:checked + .main_pages {
+    display: flex;
+}
+
+/*2e section */
+
+.description_de_la_page
+{
+    width: 100%;
+    justify-content: center;
+    text-align-last: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    height: 18%;
+    letter-spacing: 0.5px;
+}
+
+/*3e section */
+
+.articles
+{
+    flex-direction: column;
+    padding-left: 10px;
+    border-top: 5px solid #423737;
+    border-bottom: 5px solid #423737;
+    padding-bottom: 15px;
+    
+}
+.titre_articles
+{
+    height: 73px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #F9F1F1;
+    text-decoration: underline #FFFFFF;
+}
+
+.titre_articles p
+{
+    width: 60%;
+}
+.titre_articles img
+{
+    width: 127px;
+    height: 88px;
+    margin-left: 2%;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    margin-top: 18px;
+
+}
+
+.auteur_article
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFBFB;
+    height: 60px;
+}
+
+
+.button_voir_plus button
+{
+    margin-left: 35%;
+    width: 200px;
+    font-size: 70%;
+    text-align: center;
+    padding: 3px 20px;
+    background: #176516;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.button_voir_plus button:active
+{
+    transform: scale(0.96);
+}
+
+/*4e section*/
+
+.jeux
+{
+    flex-direction: column;
+    padding-left: 10px;
+}
+.titre_jeux
+{
+    height: 14%;
+    text-decoration: underline #FFFFFF;
+}
+.titre_jeux p
+{
+    width: 60%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #F9F1F1;
+}
+
+.titre_jeux img
+{
+    width: 160px;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+
+.description_jeux
+{
+    margin-left: 8%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FDF7F7;
+    padding-right: 50%;
+}
+
+.jeux button
+{
+    margin-top: 15%;
+}
+
+/*5e section*/
+
+footer
+{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 20%;
+    background: #000000;
+    border: 2px solid #3D2F2F;
+}
+
+.mentions_obligatoire
+{
+flex-direction: column;
+margin-top: 6%;
+width: 200%;
+height: 60px;
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 10px;
+color: #FDFAFA;
+justify-content: space-between;
+padding: 10px;
+}
+
+.logo_reseaux
+{
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-left: 2px solid #FFFFFF;
+}
+
+
+.logo_reseaux img
+{
+    height: 30px;
+}
+
+
+@media  screen and (max-width: 2000px) {
+    nav
+    {
+        height: 60px;
+    }
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        height: 220px;
+    }
+    nav .main_pages a 
+    {
+        width: 200px;
+    }
+    label 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #toggle:checked + .main_pages 
+    {
+        display: flex;
+    }
+}
+
+
+/*portable mode paysage*/
+@media  screen and (min-width: 550px) {
+    body 
+    {
+        flex-direction: column;
+    }
+    .description_de_la_page
+    {
+        font-size: 17px;
+        LINE-HEIGHT: 15px;
+        height: 20%;
+    }
+    .titre_articles img 
+    {
+        width: 150px;
+        height: 100px;
+        margin-left: 6%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .auteur_article
+    {
+        margin-left: 6%;
+    }
+    .button_voir_plus
+    {
+        margin-left: 25%;
+    }
+    .button_voir_plus button 
+    {
+        font-size: 80%;
+    }
+    .titre_articles, .titre_jeux
+    {
+        font-size: 18px;
+        margin-left: 6%;
+    }
+    .titre_jeux img
+    {
+        width: 150px;
+        height: 100px;
+        margin-left: 6%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .description_jeux
+    {
+        font-size: 15px;
+        line-height: 20px;
+        DISPLAY: FLEX;
+        flex-direction: row;
+        padding-right: 50%;
+    }
+    .jeux button 
+    {
+        margin-top: 15px;
+    }
+    .mentions_obligatoire
+    {
+        font-size: 13px;
+        width: 160%;
+        line-height: 40px;
+        margin-top: 0;
+        
+    }
+    .logo_reseaux
+    {
+        justify-content: space-between;
+    }
+}
+
+
+/*tablette*/
+@media  screen and (min-width: 768px) {
+    body 
+    {
+        flex-direction: column;
+    }
+    .description_de_la_page
+    {
+        font-size: 20px;
+        height: 23%;
+        line-height: 17px;
+    }
+    .titre_articles  img 
+    {
+        width: 190px;
+        height: 100px;
+        margin-left: 12%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .button_voir_plus
+    {
+        margin-left: 38%;
+    }
+    .button_voir_plus button 
+    {
+        width: 230px;
+        font-size: 95%;
+    }
+    .titre_articles, .titre_jeux
+    {
+        font-size: 20px;
+        margin-left: 6%;
+    }
+    .auteur_article
+    {
+        font-size: 13px;
+        margin-left: 6%;
+    }
+    .titre_jeux img 
+    {
+        width: 190px;
+        HEIGHT: 100px;
+        margin-left: 12%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 1%;
+    }
+    .description_jeux
+    {
+        font-size: 15px;
+        DISPLAY: FLEX;
+        flex-direction: row;
+        padding-right: 50%;
+        margin-left: 6%;
+        line-height: 21px;
+    }
+    .jeux button 
+    {
+        margin-top: 15px;
+    }
+    .mentions_obligatoire
+    {
+        font-size: 13px;
+        width: 160%;
+        flex-direction: row;
+        margin-top: 4%;
+    }
+    .logo_reseaux
+    {
+        justify-content: space-between;
+    }
+}
+/*ordinateur*/
+@media screen and (min-width: 992px) {
+    body 
+    {
+        flex-direction: column;
+    }
+    .haut_de_page
+    {
+        height: 11%;
+    }
+    .description_de_la_page
+    {
+        FONT-SIZE: 27px;
+        line-height: 20px;
+        margin-top: 0;
+        height: 26%;
+    }
+    .titre_articles  img 
+    {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+        MARGIN-LEFT: 0;
+        margin-right: 30%;
+    }
+    .button_voir_plus
+    {
+        margin-left: 67%;
+        position: absolute;
+        top: 43%;
+    }
+    .button_voir_plus button 
+    {
+        width: 230px;
+        font-size: 95%;
+        height: 50px;
+    }
+    .titre_articles, .titre_jeux
+    {
+        font-size: 23px;
+        margin-left: 6%;
+    }
+    .auteur_article
+    {
+        FONT-SIZE: 14px;
+        margin-top: 2%;
+        margin-left: 6%;
+    }
+    .titre_jeux img 
+    {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+        MARGIN-LEFT: 0;
+        margin-right: 30%;
+        margin-top: 1%;
+    }
+    .description_jeux
+    {
+        DISPLAY: FLEX;
+        flex-direction: row;
+        padding-right: 50%;
+        margin-left: 6%;
+        height: 26%;
+        margin-top: 2px;
+        font-size: 18px;
+        LINE-HEIGHT: 25px;
+    }
+    .jeux .button_voir_plus
+    {
+        TOP: 58%;
+    }
+    .jeux button 
+    {
+        margin-top: 15px;
+        width: 230px;
+        font-size: 95%;
+        height: 50px
+    }
+    .mentions_obligatoire
+    {
+        font-size: 15px;
+        width: 160%;
+        flex-direction: row;
+        margin-top: 4%;
+    }
+    .logo_reseaux
+    {
+        justify-content: space-between;
+    }
+    .logo_reseaux img
+    {
+        height: 42px;
+    }
+}
+/*ecran large*/
+@media screen and (min-width: 1200px) {
+    body 
+    {
+        flex-direction: column;
+    }
+    .haut_de_page
+    {
+        height: 13%;
+    }
+    .logo img
+    {
+        width: 150px;
+        height: 150px;
+        margin-left: 4%;
+        margin-top: 19%;
+    }
+    .description_de_la_page
+    {
+        FONT-SIZE: 27px;
+        line-height: 27px;
+        margin-top: 0;
+        height: 26%;
+    }
+    .titre_articles  img 
+    {
+        width: 350px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        MARGIN-LEFT: 0;
+        margin-right: 30%;
+    }
+    .button_voir_plus
+    {
+        margin-left: 75%;
+        position: absolute;
+        top: 45%;
+    }
+    .button_voir_plus button 
+    {
+        width: 280px;
+        font-size: 110%;
+        height: 80px
+    }
+    .titre_articles, .titre_jeux
+    {
+        font-size: 27px;
+        margin-left: 6%;
+    }
+    .auteur_article
+    {
+        FONT-SIZE: 17px;
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-bottom: 1%;
+    }
+    .titre_jeux img 
+    {
+        width: 305px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        MARGIN-LEFT: 0;
+        margin-right: 30%;
+        margin-top: 1%;
+    }
+    .description_jeux
+    {
+        DISPLAY: FLEX;
+        flex-direction: row;
+        padding-right: 50%;
+        margin-left: 6%;
+        height: 26%;
+        margin-top: 18px;
+        font-size: 23px;
+        LINE-HEIGHT: 25px;
+    }
+    .jeux .button_voir_plus
+    {
+        TOP: 61%;
+    }
+    .jeux button 
+    {
+        margin-top: 15px;
+        height: 80px;
+        width: 280px;
+        font-size: 110%;
+    }
+    .mentions_obligatoire
+    {
+        font-size: 23px;
+        width: 160%;
+        flex-direction: row;
+        margin-top: 4%;
+    }
+    .logo_reseaux
+    {
+        justify-content: space-between;
+    }
+    .logo_reseaux img
+    {
+        height: 42px;
+    } 
+}
