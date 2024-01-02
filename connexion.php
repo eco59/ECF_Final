@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_query.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>GameSoft</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <input type="checkbox" id="toggle">
                 <div class="main_pages">
                     <a href="./accueil.html">Accueil</a>
-                    <a href="./connexion.html">Se connecter</a>
+                    <a href="./connexion.php">Se connecter</a>
                     <a href="./global_jeux.html">Tous les jeux vidéo</a>
                     <a href="#">Favori</a>
                     <a href="./global_articles.html">Tous les articles</a>
@@ -28,20 +29,16 @@
             </nav>
         </div>
     </section>
-    <section class="description_de_la_page">
+    <section class="description_de_la_page se_connecter">
         <p>Se connecter
         </p>
     </section>
     <section>
         <div class="login">
         <form action="verification.php" method="POST">
-            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
-
-            <label><b>Mot de passe</b></label>
-            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-
-            <input type="submit" id="submit" value="Se connecter">
-
+            <input class="user" type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+            <input class="mdp" type="password" placeholder="Entrer le mot de passe" name="password" required>
+            <input class="button" type="submit" id="submit" value="Se connecter">
             <?php
         if(isset($_GET['erreur'])){
         $err = $_GET['erreur'];
@@ -49,13 +46,27 @@
         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
         }
         ?>
-
         </form>
         </div>
-
-
-
-
+        <div class="inscription">
+        <form action="verification.php" method="POST">
+            <input class="mail" type="mail" placeholder="Entrer votre adresse mail" name="mail" required>
+            <input class="mdp" type="password" placeholder="Entrer le mot de passe" name="password" required>
+            <input class="button" type="submit" id="submit" value="S'inscrire">
+            <?php
+        if(isset($_GET['erreur'])){
+        $err = $_GET['erreur'];
+        if($err==1 || $err==2)
+        echo "<p style='color:red'>Mail déjà utilisé</p>";
+        }
+        ?>
+        </form>
+        </div>
+    </section>
+    <section>
+        <div class="reinit">
+            <input class="button_reinit" type="submit" id="submit" value="Mot de passe oublié">
+    </div>
     </section>
     <footer>
         <div class="mentions_obligatoire">
