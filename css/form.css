@@ -1,0 +1,383 @@
+.se_connecter
+{
+    font-size: 25px;
+}
+
+.login
+{
+    border-right: 3px solid #FEFEFE;
+}
+
+.login form
+{
+    width: 100%;
+    margin-left: 20%;
+
+}
+
+.login .user, .mdp
+{
+    margin-bottom: 15%;
+    height: 25px;
+}
+
+.button
+{
+    width: 60%;
+    margin-left: 9%;
+    HEIGHT: 23%;
+    background: #176516;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.inscription form
+{
+    width: 100%;
+    margin-left: 20%;
+
+}
+
+.inscription .mail, .mdp
+{
+    margin-bottom: 15%;
+    height: 25px;
+}
+.reinit
+{
+    margin-top: 15%;
+    margin-left: 36%;
+    height: 30px;
+}
+.button_reinit
+{
+    font-size: 15px;
+    BACKGROUND: RED;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contacter
+{
+    font-size: 25px;
+}
+.formulaire_nous_contacter
+{
+    justify-content: center;
+}
+.adresse_mail form
+{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+.adresse_mail .mail, .objet
+{
+    height: 30px;
+    margin-bottom: 2%;
+}
+.message
+{
+    height: 250px;
+}
+.adresse_mail .button
+{
+    margin-top: 5%;
+    margin-left: 20%;
+    height: 10%;
+    font-size: 15px;
+}
+
+
+
+
+
+
+@media screen and (min-width:550px) {
+    .login form
+    {
+        margin-left: 35%;
+    }
+    .login .user
+    {
+        width: 80%;
+        font-size: 15px;
+    }
+    .login .mdp
+    {
+        width: 80%;
+        font-size: 15px;
+    }
+    .button
+    {
+        font-size: 18px;
+    }
+    .inscription form
+    {
+        margin-left: 15%;
+    }
+    .inscription .mail
+    {
+        font-size: 15px;
+    }
+    .inscription .mdp
+    {
+        font-size: 15px;
+    }
+    .inscription .button
+    {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .reinit
+    {
+        margin-top: 10%;
+    }
+    .button_reinit
+    {
+        font-size: 20px;
+    }
+
+    .contacter
+    {
+        height: 15%;
+        FONT-SIZE: 30px;
+    }
+    .adresse_mail .mail
+    {
+        font-size: 20px;
+    }
+    .objet
+    {
+        font-size: 20px;
+    }
+    .message
+    {
+        font-size: 20px;
+    }
+    .adresse_mail .button
+    {
+        font-size: 20px;
+    }
+
+
+}
+
+@media  screen and (min-width: 768px) {
+    .se_connecter
+    {
+        font-size: 30px;
+    }
+    .login form
+    {
+        margin-left: 35%;
+    }
+    .login .user
+    {
+        FONT-SIZE: 20px;
+        width: 70%;
+    }
+    .login .mdp
+    {
+        FONT-SIZE: 20px;
+        width: 70%;
+    }
+    .button
+    {
+        font-size: 18px;
+    }
+    .inscription form
+    {
+        margin-left: 15%;
+    }
+    .inscription .mail
+    {
+        font-size: 20px;
+    }
+    .inscription .mdp
+    {
+        font-size: 20px;
+    }
+    .inscription .button
+    {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .reinit
+    {
+        margin-top: 10%;
+        margin-left: 39%;
+    }
+    .button_reinit
+    {
+        font-size: 23px;
+    }
+
+    .contacter
+    {
+        FONT-SIZE: 35px;
+    }
+    .adresse_mail .button
+    {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .se_connecter
+    {
+        font-size: 35px;
+    }
+    .login form
+    {
+        margin-left: 35%;
+    }
+    .login .user
+    {
+        FONT-SIZE: 20px;
+        width: 70%;
+    }
+    .login .mdp
+    {
+        FONT-SIZE: 20px;
+        width: 70%;
+    }
+    .button
+    {
+        font-size: 23px;
+        margin-left: 6%;
+    }
+    .inscription form
+    {
+        margin-left: 15%;
+    }
+    .inscription .mail
+    {
+        font-size: 20px;
+    }
+    .inscription .mdp
+    {
+        font-size: 20px;
+    }
+    .inscription .button
+    {
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 23px;
+    }
+    .reinit
+    {
+        margin-top: 10%;
+        margin-left: 39%;
+    }
+    .button_reinit
+    {
+        font-size: 26px;
+        height: 40px;
+    }
+    .contacter
+    {
+        margin-top: 3%;
+        font-size: 40px;
+    }
+    .adresse_mail form
+    {
+        width: 550px;
+    }
+    .adresse_mail .mail
+    {
+        height: 45px;
+        font-size: 25px;
+    }
+    .objet
+    {
+        height: 45px;
+        font-size: 25px;
+    }
+    .message
+    {
+        font-size: 25px;
+        height: 300px;
+    }
+    .adresse_mail .button
+    {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .se_connecter
+    {
+        font-size: 43px;
+        height: 20%;
+    }
+    .login form
+    {
+        margin-left: 35%;
+    }
+    .login .user
+    {
+        font-size: 25px;
+        height: 30px;
+    }
+    .login .mdp
+    {
+        font-size: 25px;
+        height: 30px;
+    }
+    .button
+    {
+        font-size: 25px;
+        margin-left: 6%;
+    }
+    .inscription form
+    {
+        margin-left: 15%;
+    }
+    .inscription .mail
+    {
+        font-size: 25px;
+        height: 30px;
+        WIDTH: 59%;
+    }
+    .inscription .mdp
+    {
+        font-size: 25px;
+        height: 30px;
+        WIDTH: 59%;
+    }
+    .inscription .button
+    {
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 25px;
+    }
+    .reinit
+    {
+        margin-top: 5%;
+    }
+    .button_reinit
+    {
+        font-size: 30px;
+        height: 50px;
+        width: 400px;
+    }
+
+
+
+    .contacter
+    {
+        margin-top: 0;
+        font-size: 50px;
+    }
+    .adresse_mail form
+    {
+        width: 750px;
+    }
+    .adresse_mail .button
+    {
+        margin-top: 2%;
+    }
+}
