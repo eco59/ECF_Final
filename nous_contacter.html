@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_query.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>GameSoft</title>
 </head>
 <body>
@@ -28,9 +29,20 @@
             </nav>
         </div>
     </section>
-    <section class="description_de_la_page">
+    <section class="description_de_la_page contacter">
         <p>Nous contacter
         </p>
+    </section>
+    <section class="formulaire_nous_contacter">
+        <div class="adresse_mail">
+        <form action="verification.php" method="POST">
+            <input class="mail" type="mail" placeholder="Entrer votre adresse mail" name="mail" required>
+            <input class="objet" type="text" placeholder="Entrer votre objet" name="objet" required>
+            <input class="message" type="text" placeholder="Ecrivez votre message" name="text" required>
+            <input class="button envoyez" type="submit" id="submit" value="Envoyez">
+            
+        </form>
+        </div>
     </section>
     <footer>
         <div class="mentions_obligatoire">
