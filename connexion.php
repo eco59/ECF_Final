@@ -65,7 +65,7 @@
     </section>
     <section>
         <div class="reinit">
-            <input class="button_reinit" type="submit" id="submit" value="Mot de passe oublié">
+            <input class="button_rouge" type="submit" id="submit" value="Mot de passe oublié">
     </div>
     </section>
     <footer>
