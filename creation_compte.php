@@ -34,7 +34,7 @@
         </p>
     </section>
     <section>
-        <form action="creation_compte.php" method="POST">
+        <form action="creation_comptes.php" method="POST">
             <input class="mail" type="mail" placeholder="Entrer votre adresse mail" name="mail" required>
             <input class="mdp" type="password" placeholder="Entrer le mot de passe" name="password" required>
             <input class="mdp" type="password" placeholder="Confirmer votre mot de passe" name="password" required>
