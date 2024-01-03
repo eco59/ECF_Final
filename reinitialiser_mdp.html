@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_query.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>GameSoft</title>
 </head>
 <body>
@@ -31,6 +32,15 @@
     <section class="description_de_la_page">
         <p>Réinitialiser votre mot de passe
         </p>
+    </section>
+    <section>
+        <div>
+            <form action="verification.php" method="POST">
+                <input class="mdp" type="password" placeholder="Nouveau mot de passe" name="password" required>
+                <input class="mdp" type="password" placeholder="Confirmer votre mot de passe" name="password" required>
+                <input class="button_reinit" type="submit" id="submit" value="Reinitialiser le mot de passe">
+            </form>
+        </div>
     </section>
     <footer>
         <div class="mentions_obligatoire">
