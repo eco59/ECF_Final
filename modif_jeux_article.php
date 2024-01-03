@@ -34,7 +34,7 @@
     </section>
     <section>
         <div>
-            <form action="verification.php" method="POST">
+            <form action="creation_contenu.php" method="POST">
                 <input type="text" placeholder="Titre" name="titre" required>
                 <input type="text" placeholder="Description" name="description" required>
                 <input type="date" placeholder="date de création" name="date_de_creation" required>
