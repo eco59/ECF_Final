@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_query.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>GameSoft</title>
 </head>
 <body>
@@ -31,6 +32,22 @@
     <section class="description_de_la_page">
         <p>Création de compte
         </p>
+    </section>
+    <section>
+        <form action="verification.php" method="POST">
+            <input class="mail" type="mail" placeholder="Entrer votre adresse mail" name="mail" required>
+            <input class="mdp" type="password" placeholder="Entrer le mot de passe" name="password" required>
+            <input class="mdp" type="password" placeholder="Confirmer votre mot de passe" name="password" required>
+            <div>
+                <input type="checkbox" id="manager" name="fonction" value="community manager">
+                    <label for="manager">community manager</label>
+            </div>
+            <div>
+                <input type="checkbox" id="producteur" name="fonction" value="producteur">
+                    <label for="producteur">Producteur</label>
+            </div>
+            <button>CREER</button>
+        </form>
     </section>
     <footer>
         <div class="mentions_obligatoire">
