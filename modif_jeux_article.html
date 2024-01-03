@@ -32,6 +32,25 @@
         <p>Crée/modifier un article/jeux vidéo
         </p>
     </section>
+    <section>
+        <div>
+            <form action="verification.php" method="POST">
+                <input type="text" placeholder="Titre" name="titre" required>
+                <input type="text" placeholder="Description" name="description" required>
+                <input type="date" placeholder="date de création" name="date_de_creation" required>
+                <input type="number" placeholder="nombre de joueur" name="nombre_de_joueur" required>
+                <input type="text" placeholder="Gamesoft" name="Gamesoft" required>
+                <input type="text" placeholder="Type de jeu" name="type_de_jeu" required>
+                <input type="number" placeholder="Poids de dev" name="poids_de_dev">
+                <input type="date" placeholder="date estimé de fin" name="date_fin" required>
+                <input type="number" placeholder="budget" name="budget">
+                <input type="text" placeholder="statut du jeu" name="statut_du_jeu" required>
+                <input type="button" value="ajouter des images">
+                <input type="button" value="créer l'article">
+                <input type="button" value="créer le jeu">
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="mentions_obligatoire">
             <a href="nous_contacter.html">NOUS CONTACTER</a>
