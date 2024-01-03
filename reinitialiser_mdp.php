@@ -35,7 +35,7 @@
     </section>
     <section>
         <div>
-            <form action="verification.php" method="POST">
+            <form action="reinit.php" method="POST">
                 <input class="mdp" type="password" placeholder="Nouveau mot de passe" name="password" required>
                 <input class="mdp" type="password" placeholder="Confirmer votre mot de passe" name="password" required>
                 <input class="button_reinit" type="submit" id="submit" value="Reinitialiser le mot de passe">
